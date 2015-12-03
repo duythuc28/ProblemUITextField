@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOZ-As-LKs">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RNY-Gr-fwT">
+                                        <rect key="frame" x="63.5" y="7" width="193" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.60337402529999995" green="0.19631791339999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="RNY-Gr-fwT" firstAttribute="centerX" secondItem="nOZ-As-LKs" secondAttribute="centerX" id="1GT-uy-aLt"/>
+                                    <constraint firstItem="RNY-Gr-fwT" firstAttribute="centerY" secondItem="nOZ-As-LKs" secondAttribute="centerY" id="5cR-1H-a5Y"/>
+                                    <constraint firstItem="RNY-Gr-fwT" firstAttribute="width" secondItem="nOZ-As-LKs" secondAttribute="width" multiplier="0.6" constant="1" id="7Xz-dd-sVf"/>
+                                    <constraint firstAttribute="height" constant="44" id="hqe-uI-3hO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nOZ-As-LKs" secondAttribute="bottom" id="G6v-zk-DPf"/>
+                            <constraint firstItem="nOZ-As-LKs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZqS-zF-Yag"/>
+                            <constraint firstAttribute="trailing" secondItem="nOZ-As-LKs" secondAttribute="trailing" id="d3Y-5e-9R9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomView" destination="nOZ-As-LKs" id="rSd-dq-i5r"/>
+                        <outlet property="textField" destination="RNY-Gr-fwT" id="euM-eH-MiC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="173" y="342"/>
+        </scene>
+    </scenes>
+</document>
